@@ -1,0 +1,167 @@
+/* =========================
+   VARIABLES GLOBALES
+   Definimos los colores principales del branding
+   ========================= */
+:root {
+  --color-primary: #ff00ff;   /* Magenta del logo */
+  --color-secondary: #16ea9e; /* Verde fintech */
+  --color-dark: #1e1e1e;
+  --color-light: #ffffff;
+  --color-gray: #f5f5f5;
+}
+
+/* =========================
+   ESTILOS GENERALES
+   ========================= */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color-gray);
+  color: var(--color-dark);
+}
+
+/* Quitar subrayado y colores default de links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* =========================
+   LOGO
+   ========================= */
+.logo {
+  width: 150px;        /* Tamaño ideal para login */
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 4px;
+}
+
+/* =========================
+   TARJETAS GENERALES
+   ========================= */
+.card {
+  border: none;
+  border-radius: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================
+   LOGIN
+   ========================= */
+.login-card {
+  border-top: 5px solid var(--color-primary);
+  width: 100%;
+  max-width: 380px;  
+  padding: 32px;  
+}
+
+/* =========================
+   NAVBAR
+   ========================= */
+.navbar {
+  background: linear-gradient(
+    90deg,
+    var(--color-primary),
+    var(--color-secondary)
+    
+  );
+}
+
+/* =========================
+   BOTONES ALKE
+   ========================= */
+.btn.btn-alke-primary {
+  background-color: #ff00ff;
+  color: #ffffff;
+  border: none;
+}
+
+.btn.btn-alke-primary:hover {
+  background-color: #16ea9e;
+  color: #ffffff; 
+}
+
+.btn.btn-alke-secondary {
+  background-color: #16ea9e;
+  color: #ffffff;
+  border: none;
+}
+
+.btn.btn-alke-secondary:hover {
+  background-color: #16ea9e;
+  color: #f5f5f5;
+
+
+/* =========================
+   TARJETAS DE ACCIONES (MENÚ)
+   ========================= */
+.action-card {
+  cursor: pointer;
+  border-left: 5px solid var(--color-secondary);
+  background-color: var(--color-light);
+}
+
+.action-card h5 {
+  margin: 0;
+}
+
+/* =========================
+   SALDO
+   ========================= */
+#balance {
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+/* =========================
+   FORMULARIOS
+   ========================= */
+.form-control {
+  border-radius: 10px;
+}
+
+.form-control:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 0.2rem rgba(255, 0, 255, 0.25);
+}
+
+/* =========================
+   MENSAJES DINÁMICOS
+   ========================= */
+.text-success {
+  font-weight: 600;
+}
+
+.text-danger {
+  font-weight: 600;
+}
+
+/* =========================
+   LISTA DE TRANSACCIONES
+   ========================= */
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.list-group-item span {
+  font-weight: 600;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+@media (max-width: 768px) {
+  .login-card {
+    width: 100%;
+  }
+}
+
