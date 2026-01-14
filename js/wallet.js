@@ -93,3 +93,18 @@ document.addEventListener("DOMContentLoaded", () => {
 window.addEventListener("pageshow", () => {
   renderBalance();
 });
+/* ---------- LOGOUT ---------- */
+
+document.addEventListener("DOMContentLoaded", () => {
+  const logoutBtn = document.getElementById("logoutBtn");
+
+  if (logoutBtn) {
+    logoutBtn.addEventListener("click", () => {
+      // Opcional: limpiar datos de sesión
+      // localStorage.removeItem("userLogged");
+
+      // Redirigir a pantalla de bienvenida
+      window.location.href = "../html/index.html";
+    });
+  }
+});
