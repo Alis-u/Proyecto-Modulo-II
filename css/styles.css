@@ -54,11 +54,12 @@ a {
    LOGIN
    ========================= */
 .login-card {
-  border-top: 5px solid var(--color-primary);
   width: 100%;
-  max-width: 380px;  
-  padding: 32px;  
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 1.5rem;
 }
+ 
 
 /* =========================
    NAVBAR
@@ -165,3 +166,18 @@ a {
   }
 }
 
+@media (max-width: 375px) {
+  .login-card {
+    max-width: 100%;
+    padding: 1.25rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+  .page-center {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
