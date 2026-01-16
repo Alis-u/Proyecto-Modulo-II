@@ -1,6 +1,6 @@
 /* =========================
    UI.JS
-   jQuery para UX
+   jQuery 
    ========================= */
 
 $(document).ready(function () {
